@@ -80,7 +80,7 @@ sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
  #http://your_ip_or_domain:8080 
 
 
-echo "you can now access your jenkins server by using this link. http://$(ifconfig eth1 | head -2 | tail -1 | awk '{print$2}'):8080" 
+echo "you can now access your jenkins server by using this link. http://$(ifconfig eth1 | head -2 | tail -1 | awk '{print $2}'):8080" 
 
 
  
